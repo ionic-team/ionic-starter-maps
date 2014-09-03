@@ -24,7 +24,11 @@ angular.module('starter.directives', [])
         });
       }
 
-      google.maps.event.addDomListener(window, 'load', initialize);
+      if (document.readyState === "complete") {
+        initialize();
+      } else {
+        google.maps.event.addDomListener(window, 'load', initialize);
+      }
     }
   }
 });
