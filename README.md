@@ -15,6 +15,12 @@ $ sudo npm install -g ionic cordova
 $ ionic start myApp maps 
 ```
 
+Then install the [Geolocation plugin](https://github.com/apache/cordova-plugin-geolocation):
+
+```bash
+$ cordova plugin add org.apache.cordova.geolocation
+```
+
 Then, to run it, cd into `myApp` and run:
 
 ```bash
